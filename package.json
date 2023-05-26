@@ -1,0 +1,28 @@
+{
+  "name": "exp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "build": "npm run clean && cp -r src dist/src",
+    "clean": "rimraf dist && mkdirp dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "flurix": "^1.0.0",
+    "mongoose": "^7.2.1"
+  },
+  "devDependencies": {
+    "mkdirp": "1.0.4",
+    "node-fetch": "^2.6.11",
+    "nodemon": "^2.0.22",
+    "rimraf": "3.0.2"
+  }
+}
