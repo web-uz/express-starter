@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node src/server.js",
-    "build": "npm run clean && cp -r src dist/src",
-    "clean": "rimraf dist && mkdirp dist"
+    "dev": "nodemon src/server.js"
   },
   "keywords": [],
   "author": "",
@@ -20,9 +19,6 @@
     "mongoose": "^7.2.1"
   },
   "devDependencies": {
-    "mkdirp": "1.0.4",
-    "node-fetch": "^2.6.11",
-    "nodemon": "^2.0.22",
-    "rimraf": "3.0.2"
+    "nodemon": "^2.0.22"
   }
 }
